@@ -3,5 +3,8 @@
   "about": "About me",
   "date": "Date",
   "date_from": "Date from",
-  "email": "Email"
+  "email": "Email",
+  "profile": {
+    "text": "The web site of Chris Pidorock and the Web Developer browser extension."
+  }
 }
