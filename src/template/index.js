@@ -39,11 +39,8 @@ class Page extends Component {
                     </div>
 
                     <div className='something-block content-block'>Something</div>
-
                     <div className='third-block content-block'>Third block</div>
-
                     <div className='fourth-block content-block'>Fourth block</div>
-                    
                     <div className='fifth-block content-block'>Fifth block</div>
 
                 </main>
