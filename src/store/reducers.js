@@ -2,11 +2,15 @@ import { combineReducers } from 'redux'
 
 import actions from './actions'
 
-const deviceReducer = (state = {}, action) => {
+const initialState = {
+  device: 'desktop'
+}
+
+const deviceReducer = (state = initialState, action) => {
   switch (action.type) {
-    case (actions.setDevice):
+    case actions.SET_DEVICE:
       return Object.assign({}, state, {
-        device: action.device
+        device: action.payload
       })
     default:
       return state

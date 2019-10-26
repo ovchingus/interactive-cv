@@ -1,10 +1,13 @@
 const SET_DEVICE = 'SET_DEVICE'
 
-function setDevice (device) {
+const setDevice = device => {
   return {
     type: SET_DEVICE,
     payload: device
   }
 }
 
-export default setDevice
+export default {
+  setDevice,
+  SET_DEVICE
+}
