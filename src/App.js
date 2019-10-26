@@ -3,15 +3,20 @@ import { useTranslation } from 'react-i18next'
 
 import logo from './logo.svg'
 import './App.css'
+import { DumbPage } from './components/DumbPage'
 
 // page uses the hook
 function Page () {
-  const { t, i18n } = useTranslation()
+  const { i18n } = useTranslation()
 
   const changeLanguage = lng => {
     i18n.changeLanguage(lng)
   }
 
+  return (
+    <DumbPage changeLanguage={changeLanguage} />
+  )
+  /*
   return (
     <div className='App'>
       <div className='App-header'>
@@ -26,6 +31,7 @@ function Page () {
       </div>
     </div>
   )
+  */
 }
 
 // loading component for suspense fallback

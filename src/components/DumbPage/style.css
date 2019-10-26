@@ -1,0 +1,269 @@
+.main-block {
+    width: 100%;
+    color: white;
+    background-color:#12263f;
+    min-width: 320px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 'header-logo header-links header-profile';
+    width: 100%;
+    background-color:#152e4d;
+    height: 40px;
+}
+
+.header-logo {
+    grid-area: header-logo;
+    align-self: center;
+    justify-self: center;
+}
+
+.header-links {
+    grid-area: header-links;
+    align-self: center;
+    justify-self: end;
+}
+
+.header-profile {
+    grid-area: header-profile;
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+
+
+/* При ширине страницы больше чем 640px */
+@media (min-width: 640px) {
+    .main {
+        height: 800px;
+        margin: 60px auto;
+        width: 80%;
+        min-width: 320px;
+        max-width: 960px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px 300px;
+        grid-template-areas:
+        'profile-block profile-block something-block'
+        'third-block fourth-block fifth-block';
+        gap: 20px;
+    }
+
+    .content-block {
+        border-radius: 10px;
+        background-color:#152e4d;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .profile-block {
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 100%;
+        grid-template-areas: 'profile-img profile-info';
+        grid-area: profile-block;
+        
+    }
+    .something-block {
+        grid-area: something-block;
+        align-self: center;
+        justify-self: center;
+    }
+    .third-block {
+        grid-area: third-block;
+        align-self: center;
+        justify-self: center;
+    }
+    .fourth-block {
+        grid-area: fourth-block;
+        align-self: center;
+        justify-self: center;
+    }
+    .fifth-block {
+        grid-area: fifth-block;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    /* Спроси у Макса зачем тут коммент*/
+    .profile-img {
+        grid-area: profile-img;
+        align-self: center;
+        justify-self: start;
+        margin-left: 30px;
+    }
+    .profile-img > div {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .profile-img > div > img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .profile-info {
+        grid-area: profile-info;
+        align-self: center;
+        justify-self: start;
+        font-size: 16pt;
+    }
+
+    /*Footer*/
+    .footer {
+        margin: auto;
+        width: 75%;
+        min-width: 320px;
+        max-width: 960px;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 100px;
+        grid-template-areas: 'footer-email footer-contacts';
+    }
+    
+    .footer-email {
+        grid-area: footer-email;
+        justify-self: start;
+        align-self: center;
+    }
+    
+    .input-form {
+        width: 100%;
+        height: 50px;
+        background-color: #152e4d;
+        border: 1px solid #152e4d;
+        color: white;
+        text-align: center;
+    }
+    
+    .footer-contacts {
+        grid-area: footer-contacts;
+        justify-self: end;
+        align-self: center;
+    }
+}
+
+
+
+/* (Мобильная версия) При ширине страницы меньше чем 640px */
+@media (max-width: 639px) {
+    .main {
+        height: 800px;
+        margin: 50px auto;
+        width: 95%;
+        display: grid;
+        gap: 10px;
+    }
+    .content-block {
+        background-color:#152e4d;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    .profile-block {
+        display: grid;
+        overflow: hidden;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 100%;
+        grid-template-areas: 'profile-img profile-info';
+    }
+    .something-block {
+        justify-self: center;
+        align-self: center;
+    }
+    .third-block {
+        justify-self: center;
+        align-self: center;
+    }
+    .fourth-block {
+        justify-self: center;
+        align-self: center;
+    }
+    .fifth-block {
+        justify-self: center;
+        align-self: center;
+    }
+
+    /* Спроси у Макса зачем тут коммент*/
+    .profile-img {
+        grid-area: profile-img;
+        align-self: center;
+        justify-self: center;
+    }
+    .profile-img > div {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .profile-img > div > img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .profile-info {
+        grid-area: profile-info;
+        align-self: center;
+        justify-self: start;
+        font-size: 12pt;
+    }
+
+    /*Footer*/
+    .footer {
+        display: grid;
+        grid-template-rows: 100px;
+    }
+    
+    .footer-email {
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .input-form {
+        width: 100%;
+        height: 50px;
+        background-color: #152e4d;
+        border: 1px solid #152e4d;
+        color: white;
+        text-align: center;
+    }
+    
+    .footer-contacts {
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+
+.footer-contacts > ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contacts > ul > li {
+    margin: 10px 0;
+}
+
+
+.footer-contacts > ul > li > a {
+    text-decoration: none;
+    color: coral;
+}
+
+
+
+
+
+
+
+
