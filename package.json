@@ -26,14 +26,17 @@
     ]
   },
   "dependencies": {
-    "gh-pages": "^2.1.1",
     "i18next": "^18.0.1",
+    "mobile-detect": "^1.4.4",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-i18next": "^11.0.0",
-    "react-scripts": "3.2.0"
+    "react-redux": "^7.1.1",
+    "react-scripts": "3.2.0",
+    "redux": "^4.0.4"
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "standard": "^14.3.1"
   },
   "homepage": "https://ovchingus.github.io/interactive-cv/"

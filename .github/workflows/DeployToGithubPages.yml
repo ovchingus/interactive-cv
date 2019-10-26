@@ -1,22 +1,22 @@
-name: GitHub Pages Deploy
+# name: GitHub Pages Deploy
 
-on: [push]
+# on: [push]
 
-jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
+# jobs:
+#   lint:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v1
 
-      - name: Yarn init
-        uses: Borales/actions-yarn@v2.0.1
-        with:
-          cmd: install # will run `yarn install` command
+#       - name: Yarn init
+#         uses: Borales/actions-yarn@v2.0.1
+#         with:
+#           cmd: install # will run `yarn install` command
 
-      - name: Build && Deploy
-        uses: Borales/actions-yarn@v2.0.1
-        with: 
-          cmd: deploy
+      # - name: Build && Deploy
+      #   uses: Borales/actions-yarn@v2.0.1
+      #   with: 
+      #     cmd: deploy
 
       # - name: Deploy
       #   uses: maxheld83/ghpages@v0.2.1
