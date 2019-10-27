@@ -2,7 +2,7 @@
     position: fixed;
     display: flex;
     width: 100%;
-    background-color: var(--main-background-color);
+    background-color: var(--main-background-elements-color);
     height: 40px;
     border-bottom: 1px solid var(--main-border-color);
 }
@@ -57,11 +57,11 @@
     justify-self: center;
 }
 
-@media (max-width: 639px) {
+@media (max-width: 640px) {
     .header {
         min-width: var(--min-width);
         width: 100%;
-        background-color: var(--main-background-color);
+        background-color: var(--main-background-elements-color);
     }
 
     .header .wrapper {
