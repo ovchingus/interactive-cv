@@ -9,11 +9,6 @@ jobs:
       - uses: actions/checkout@v1
       - uses: goto-bus-stop/standard-action@v1.0.0
         with:
-          # optionally select a different, standard-like linter
-          # linter: semistandard
-
-          # optionally select a different eslint formatter for the log output, default 'stylish'
-          # formatter: tap
 
           # limit the files to lint, default '**/*.js'
           files: src/*.js
@@ -23,4 +18,4 @@ jobs:
 
         # Allow the action to add lint errors to the github diff UI
         env:
-          GITHUB_TOKEN: ${{secrets.GH_TOKEN_STANDARD}}
+          GITHUB_TOKEN: ${{secrets.GH_Pages_Deploy}}

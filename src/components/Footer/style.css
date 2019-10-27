@@ -1,85 +1,42 @@
-@media(min-width: 641px) {
-    .footer {
-        margin: auto;
-        width: 100%;
-        min-width: 320px;
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 100px;
-        grid-template-areas: 'footer-email footer-contacts';
-        background-color: var(--main-background-elements-color);
-        border-top: 1px solid var(--main-border-color);
-    }
-    .footer .email {
-        grid-area: footer-email;
-        justify-self: start;
-        align-self: center;
-    }
-    .input-form {
-        margin-left: 15px;
-        width: 100%;
-        height: 75px;
-        text-align: center;
-    }
-    .input-form:focus::-webkit-input-placeholder {
-        color:transparent;
-        transition: 0.5s;
-    }
-    .footer .contacts {
-        grid-area: footer-contacts;
-        justify-self: end;
-        align-self: center;
-        margin-right: 50px;
-    }
+.footer {
+    margin: auto;
+    width: 100%;
+    min-width: var(--min-width);
+    display: flex;
+    background-color: var(--main-background-elements-color);
+    border-top: 1px solid var(--main-border-color);
 }
 
-@media(max-width: 640px){
-    .footer {
-        display: grid;
-        grid-template-rows: 100px;
-        width: 100%;
-        background-color: var(--main-background-elements-color);
-        border-top: 1px solid (--main-border-color);
-    }
-    .footer .email {
-        justify-self: center;
-        align-self: center;
-    }
-    .input-form {
-        width: 100%;
-        height: 50px;
-        text-align: center;
-    }
-    .footer .contacts {
-        justify-self: center;
-        align-self: center;
-    }
+.footer .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
 }
 
-.footer .contacts > ul{
+.footer .wrapper a {
+    justify-self: center;
+    align-self: center;
     list-style-type: none;
     text-align: center;
-    padding: 0;
-    margin: 0;
-}
-
-.footer .contacts > ul > li {
     margin: 10px 0;
-}
-
-
-.footer .contacts > ul > li > a {
     text-decoration: none;
     color: var(--main-text-color);
     transition: 0.25s;
 }
 
-.footer .contacts > ul > li > a:hover {
+.footer .wrapper a:hover {
     color: var(--main-hover-text-color);
 }
 
 
+@media(max-width: 640px){
+    .footer .wrapper {
+        grid-template-columns: 1fr;
+    }
 
+}
 
 
 
