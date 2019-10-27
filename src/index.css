@@ -14,11 +14,16 @@ code {
 }
 
 :root {
-  --main-color: rgb(228, 228, 228);    /**/ /**/                                         /*white*/
-  --main-background-image: none; /**/ /**/                                   /*url(https://techrocks.ru/wp-content/uploads/2018/12/1.jpeg)*/
-  --main-hover-color: rgb(77, 204, 255); /**/ /**/                            /*coral*/
-  --main-hover-text-color: rgb(20, 53, 61);  /**/ /**/ 
-  --main-background-color: rgba(195, 195, 195, 0.9); /**/ /**/    /*rgba(58, 58, 58, 0.9)*/
-  --main-border-color: rgb(209, 209, 209); /**/ /**/                 /*rgb(80, 80, 80)*/
-  --main-text-color: rgb(51, 51, 51); /**/ /**/                             /*white*/
+  --min-width: 320px;
+  --max-width: 1024px;
+  
+  --main-color: rgb(228, 228, 228);
+  --main-text-color: white;
+
+  --main-background-image: linear-gradient(20deg, rgba(119, 119, 119, 0.95), rgb(255, 255, 255));
+  --main-background-color: rgba(58, 58, 58, 0.9); 
+
+  --main-hover-color: coral;
+  --main-hover-text-color: rgb(43, 63, 68);
+  --main-border-color: rgb(80, 80, 80);
 }
