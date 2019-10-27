@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react'
 import { useTranslation } from 'react-i18next'
 
-import logo from './logo.svg'
+import logo from './assets/logo.svg'
 import './App.css'
 import { DumbPage } from './components/DumbPage'
 
@@ -16,22 +16,6 @@ function Page () {
   return (
     <DumbPage changeLanguage={changeLanguage} />
   )
-  /*
-  return (
-    <div className='App'>
-      <div className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <button onClick={() => changeLanguage('ru')}>ru</button>
-        <button onClick={() => changeLanguage('en')}>en</button>
-        <div className='App-intro'>
-        Some text
-        </div>
-        <div>{t('name')}: Vladimir</div>
-        <div>{t('about')}: programmer</div>
-      </div>
-    </div>
-  )
-  */
 }
 
 // loading component for suspense fallback
