@@ -1,47 +1,65 @@
-.main-block {
+.all-block {
     width: 100%;
-    color: white;
-    background-color:#12263f;
+    background-image: url(https://techrocks.ru/wp-content/uploads/2018/12/1.jpeg);
     min-width: 320px;
+    color: white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-.header {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 100%;
-    grid-template-areas: 'header-logo header-links header-profile';
-    width: 100%;
-    background-color:#152e4d;
-    height: 40px;
-}
-
-.header-logo {
-    grid-area: header-logo;
-    align-self: center;
-    justify-self: center;
-}
-
-.header-links {
-    grid-area: header-links;
-    align-self: center;
-    justify-self: end;
-}
-
-.header-profile {
-    grid-area: header-profile;
-    align-self: center;
-    justify-self: center;
-}
-
-
-
-
 
 /* При ширине страницы больше чем 640px */
 @media (min-width: 640px) {
+    .header {
+        z-index: 50;
+        display: grid;
+        position: fixed;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 100%;
+        grid-template-areas: 'header-logo header-links header-profile';
+        width: 100%;
+        background-color: rgba(58, 58, 58, 0.9);
+        height: 39px;
+        border-bottom: 1px solid rgb(80, 80, 80);
+    }
+
+    .header a {
+        text-decoration: none;
+        color: white;
+        transition: 0.25s;
+    }
+
+    .header a:hover {
+        color: coral;
+    }
+    
+    .header-logo {
+        grid-area: header-logo;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .header-links {
+        grid-area: header-links;
+        align-self: center;
+        justify-self: end;
+        margin-left: 10px;
+    }
+    
+    .header-links > a {
+        margin-left: 30px;
+    }
+    
+    .header-profile {
+        grid-area: header-profile;
+        align-self: center;
+        justify-self: center;
+    }
+
     .main {
         height: 800px;
-        margin: 60px auto;
+        margin: 0 auto;
+        padding: 60px 0;
         width: 80%;
         min-width: 320px;
         max-width: 960px;
@@ -56,10 +74,18 @@
 
     .content-block {
         border-radius: 10px;
-        background-color:#152e4d;
+        background-color: rgba(58, 58, 58, 0.9);
         width: 100%;
         height: 100%;
         overflow: hidden;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .content-block:hover {
+        transform: scale(1.01);
+        background-color: coral;
     }
 
     .profile-block {
@@ -69,23 +95,26 @@
         grid-template-rows: 100%;
         grid-template-areas: 'profile-img profile-info';
         grid-area: profile-block;
-        
     }
+
     .something-block {
         grid-area: something-block;
         align-self: center;
         justify-self: center;
     }
+
     .third-block {
         grid-area: third-block;
         align-self: center;
         justify-self: center;
     }
+
     .fourth-block {
         grid-area: fourth-block;
         align-self: center;
         justify-self: center;
     }
+
     .fifth-block {
         grid-area: fifth-block;
         justify-self: center;
@@ -120,13 +149,14 @@
     /*Footer*/
     .footer {
         margin: auto;
-        width: 75%;
+        width: 100%;
         min-width: 320px;
-        max-width: 960px;
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 100px;
         grid-template-areas: 'footer-email footer-contacts';
+        background-color: rgba(58, 58, 58, 0.8);
+        border-top: 1px solid rgb(80, 80, 80);
     }
     
     .footer-email {
@@ -136,18 +166,23 @@
     }
     
     .input-form {
+        margin-left: 15px;
         width: 100%;
-        height: 50px;
-        background-color: #152e4d;
-        border: 1px solid #152e4d;
-        color: white;
+        height: 75px;
         text-align: center;
     }
-    
+
+    .input-form:focus::-webkit-input-placeholder {
+        color:transparent;
+        transition: 0.5s;
+    }
+
+
     .footer-contacts {
         grid-area: footer-contacts;
         justify-self: end;
         align-self: center;
+        margin-right: 50px;
     }
 }
 
@@ -155,20 +190,61 @@
 
 /* (Мобильная версия) При ширине страницы меньше чем 640px */
 @media (max-width: 639px) {
+    .header {
+        min-width: 320px;
+        position: fixed;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 100%;
+        grid-template-areas: 'header-logo header-links header-profile';
+        width: 100%;
+        background-color: rgba(58, 58, 58, 0.9);
+        z-index: 50;
+        height: 40px;
+    }
+
+    .header a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .header-logo {
+        grid-area: header-logo;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .header-links {
+        grid-area: header-links;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .header-profile {
+        grid-area: header-profile;
+        align-self: center;
+        justify-self: center;
+    }
+
     .main {
         height: 800px;
-        margin: 50px auto;
+        margin: 0 auto;
+        padding: 50px 0;
+        grid-template-rows: 100px;
         width: 95%;
         display: grid;
         gap: 10px;
     }
+
     .content-block {
-        background-color:#152e4d;
+        background-color: rgba(58, 58, 58, 0.9);
         width: 100%;
         height: 100%;
         border-radius: 10px;
         overflow: hidden;
+        text-align: center;
     }
+    
     .profile-block {
         display: grid;
         overflow: hidden;
@@ -221,6 +297,9 @@
     .footer {
         display: grid;
         grid-template-rows: 100px;
+        width: 100%;
+        background-color: rgba(58, 58, 58, 0.9);
+        border-top: 1px solid rgb(80, 80, 80);
     }
     
     .footer-email {
@@ -231,9 +310,6 @@
     .input-form {
         width: 100%;
         height: 50px;
-        background-color: #152e4d;
-        border: 1px solid #152e4d;
-        color: white;
         text-align: center;
     }
     
@@ -246,6 +322,7 @@
 
 .footer-contacts > ul{
     list-style-type: none;
+    text-align: center;
     padding: 0;
     margin: 0;
 }
@@ -257,6 +334,11 @@
 
 .footer-contacts > ul > li > a {
     text-decoration: none;
+    color: white;
+    transition: 0.25s;
+}
+
+.footer-contacts > ul > li > a:hover {
     color: coral;
 }
 
