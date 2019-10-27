@@ -2,7 +2,6 @@ import React, { Suspense } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import logo from './assets/logo.svg'
-import './App.css'
 import { DumbPage } from './components/DumbPage'
 
 // page uses the hook
@@ -18,6 +17,7 @@ function Page () {
   )
 }
 
+// TODO: make an loader component
 // loading component for suspense fallback
 const Loader = () => (
   <div className='App'>

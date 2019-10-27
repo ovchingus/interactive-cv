@@ -1,0 +1,49 @@
+.header {
+    z-index: 50;
+    display: grid;
+    position: fixed;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 'header-logo header-links header-profile';
+    width: 100%;
+    background-color: var(--main-background-color);
+    height: 39px;
+    border-bottom: 1px solid var(--main-border-color);
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    transition: 0.25s;
+}
+
+.header a:hover {
+    color: var(--main-hover-text-color);
+}
+
+.header .logo {
+    grid-area: header-logo;
+    align-self: center;
+    justify-self: center;
+}
+
+.header .logotext {
+    color: blue;
+}
+
+.header .links {
+    grid-area: header-links;
+    align-self: center;
+    justify-self: end;
+    margin-left: 10px;
+}
+
+.header .links > a {
+    margin-left: 30px;
+}
+
+.header .profile {
+    grid-area: header-profile;
+    align-self: center;
+    justify-self: center;
+}
