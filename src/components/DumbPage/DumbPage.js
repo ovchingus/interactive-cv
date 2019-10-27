@@ -3,6 +3,7 @@ import './style.css'
 
 import { useTranslation } from 'react-i18next'
 import { Header } from '../../components/Header'
+import { Footer } from '../../components/Footer'
 
 function DumbPage ({ changeLanguage }) {
   const { t } = useTranslation()
@@ -59,18 +60,7 @@ function DumbPage ({ changeLanguage }) {
           </div>
         </main>
 
-        <footer className='footer'>
-          <div className='footer-email'>
-            <input className='input-form' placeholder='Send me a message!' />
-          </div>
-          <div className='footer-contacts'>
-            <ul>
-              <li><a href='tel:+79045133706'>+7(904)-513-37-06</a></li>
-              <li><a href='mailto:maxpavlov9991@gmail.com'>maxpavlov9991@gmail.com</a></li>
-              <li><a href='https://github.com/maxpavlov9991'>GitHub</a></li>
-            </ul>
-          </div>
-        </footer>
+        <Footer />
 
       </div>
     </div>
