@@ -18,7 +18,7 @@
         grid-template-rows: 100%;
         grid-template-areas: 'header-logo header-links header-profile';
         width: 100%;
-        background-color: rgba(58, 58, 58, 0.9);
+        background-color: var(--main-header-background-color);
         height: 39px;
         border-bottom: 1px solid rgb(80, 80, 80);
     }
