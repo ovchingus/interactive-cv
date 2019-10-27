@@ -24,6 +24,6 @@ code {
   --main-background-color: rgba(58, 58, 58, 0.9); 
 
   --main-hover-color: coral;
-  --main-hover-text-color: rgb(43, 63, 68);
+  --main-hover-text-color: coral;
   --main-border-color: rgb(80, 80, 80);
 }
