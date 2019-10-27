@@ -12,3 +12,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+:root {
+  --main-color: rgb(228, 228, 228);    /**/ /**/                                         /*white*/
+  --main-background-image: none; /**/ /**/                                   /*url(https://techrocks.ru/wp-content/uploads/2018/12/1.jpeg)*/
+  --main-hover-color: rgb(77, 204, 255); /**/ /**/                            /*coral*/
+  --main-hover-text-color: rgb(20, 53, 61);  /**/ /**/ 
+  --main-background-color: rgba(195, 195, 195, 0.9); /**/ /**/    /*rgba(58, 58, 58, 0.9)*/
+  --main-border-color: rgb(209, 209, 209); /**/ /**/                 /*rgb(80, 80, 80)*/
+  --main-text-color: rgb(51, 51, 51); /**/ /**/                             /*white*/
+}

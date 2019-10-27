@@ -1,19 +1,19 @@
 import React from 'react'
 
-import style from './style.css'
+import './style.css'
 
 function Header () {
   return (
-    <header className={style.header}>
-      <div className={style.logo}>
-        <a href='#' className={style.logo-text}>Logo</a>
+    <header className='header'>
+      <div className='logo'>
+        <a href='#' className='logotext'>Logo</a>
       </div>
-      <div className={style.links}>
+      <div className='links'>
         <a href='#'>Link#1</a>
         <a href='#'>Link#2</a>
         <a href='#'>Link#3</a>
       </div>
-      <div className={style.profile}>
+      <div className='profile'>
         <a href='#'>Profile</a>
       </div>
     </header>
