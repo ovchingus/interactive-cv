@@ -1,8 +1,9 @@
 .all-block {
     width: 100%;
-    background-image: url(https://techrocks.ru/wp-content/uploads/2018/12/1.jpeg);
+    background-color: var(--main-color);
+    background-image: var(--main-background-image);
     min-width: 320px;
-    color: white;
+    color: var(--main-text-color);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,19 +19,20 @@
         grid-template-rows: 100%;
         grid-template-areas: 'header-logo header-links header-profile';
         width: 100%;
-        background-color: var(--main-header-background-color);
+        background-color: var(--main-background-color);
         height: 39px;
-        border-bottom: 1px solid rgb(80, 80, 80);
+        border-bottom: 1px solid var(--main-border-color);
     }
 
     .header a {
         text-decoration: none;
-        color: white;
+        color: var(--main-text-color);
         transition: 0.25s;
+        font-weight: bold;
     }
 
     .header a:hover {
-        color: coral;
+        color: var(--main-hover-text-color);
     }
     
     .header-logo {
@@ -74,7 +76,7 @@
 
     .content-block {
         border-radius: 10px;
-        background-color: rgba(58, 58, 58, 0.9);
+        background-color: var(--main-background-color);
         width: 100%;
         height: 100%;
         overflow: hidden;
@@ -85,7 +87,7 @@
 
     .content-block:hover {
         transform: scale(1.01);
-        background-color: coral;
+        background-color: var(--main-hover-color);
     }
 
     .profile-block {
@@ -155,8 +157,8 @@
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 100px;
         grid-template-areas: 'footer-email footer-contacts';
-        background-color: rgba(58, 58, 58, 0.8);
-        border-top: 1px solid rgb(80, 80, 80);
+        background-color: var(--main-background-color);
+        border-top: 1px solid var(--main-border-color);
     }
     
     .footer-email {
@@ -198,14 +200,15 @@
         grid-template-rows: 100%;
         grid-template-areas: 'header-logo header-links header-profile';
         width: 100%;
-        background-color: rgba(58, 58, 58, 0.9);
+        background-color: var(--main-background-color);
         z-index: 50;
         height: 40px;
     }
 
     .header a {
         text-decoration: none;
-        color: white;
+        color: var(--main-text-color);
+        font-weight: bold;
     }
     
     .header-logo {
@@ -237,7 +240,7 @@
     }
 
     .content-block {
-        background-color: rgba(58, 58, 58, 0.9);
+        background-color: var(--main-background-color);
         width: 100%;
         height: 100%;
         border-radius: 10px;
@@ -298,8 +301,8 @@
         display: grid;
         grid-template-rows: 100px;
         width: 100%;
-        background-color: rgba(58, 58, 58, 0.9);
-        border-top: 1px solid rgb(80, 80, 80);
+        background-color: var(--main-background-color);
+        border-top: 1px solid (--main-border-color);
     }
     
     .footer-email {
@@ -334,12 +337,12 @@
 
 .footer-contacts > ul > li > a {
     text-decoration: none;
-    color: white;
+    color: var(--main-text-color);
     transition: 0.25s;
 }
 
 .footer-contacts > ul > li > a:hover {
-    color: coral;
+    color: var(--main-hover-text-color);
 }
 
 
