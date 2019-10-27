@@ -1,7 +1,7 @@
 .all-block {
     width: 100%;
-    background-color: var(--main-color);
     background-image: var(--main-background-image);
+    background: var(--main-background-color);
     min-width: 320px;
     color: var(--main-text-color);
     background-attachment: fixed;
@@ -20,7 +20,7 @@
         grid-template-rows: 100%;
         grid-template-areas: 'header-logo header-links header-profile';
         width: 100%;
-        background-color: var(--main-background-color);
+        background-color: var(--main-background-elements-color);
         height: 39px;
         border-bottom: 1px solid var(--main-border-color);
     }
@@ -77,7 +77,7 @@
 
     .content-block {
         border-radius: 10px;
-        background-color: var(--main-background-color);
+        background-color: var(--main-background-elements-color);
         width: 100%;
         height: 100%;
         overflow: hidden;
@@ -158,7 +158,7 @@
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 100px;
         grid-template-areas: 'footer-email footer-contacts';
-        background-color: var(--main-background-color);
+        background-color: var(--main-background-elements-color);
         border-top: 1px solid var(--main-border-color);
     }
     
@@ -202,7 +202,7 @@
         grid-template-rows: 100%;
         grid-template-areas: 'header-logo header-links header-profile';
         width: 100%;
-        background-color: var(--main-background-color);
+        background-color: var(--main-background-elements-color);
         z-index: 50;
         height: 40px;
     }
@@ -242,7 +242,7 @@
     }
 
     .content-block {
-        background-color: var(--main-background-color);
+        background-color: var(--main-background-elements-color);
         width: 100%;
         height: 100%;
         border-radius: 10px;
@@ -303,7 +303,7 @@
         display: grid;
         grid-template-rows: 100px;
         width: 100%;
-        background-color: var(--main-background-color);
+        background-color: var(--main-background-elements-color);
         border-top: 1px solid (--main-border-color);
     }
     
