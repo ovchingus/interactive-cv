@@ -23,4 +23,4 @@ jobs:
 
         # Allow the action to add lint errors to the github diff UI
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{secrets.GH_TOKEN_STANDARD}}
