@@ -18,4 +18,4 @@ jobs:
 
         # Allow the action to add lint errors to the github diff UI
         env:
-          GITHUB_TOKEN: ${{secrets.GH_Pages_Deploy}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
