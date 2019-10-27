@@ -13,7 +13,8 @@
     .header {
         z-index: 50;
         display: grid;
-        position: fixed;
+        position: sticky;
+        top: 0;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 100%;
         grid-template-areas: 'header-logo header-links header-profile';
@@ -192,7 +193,8 @@
 @media (max-width: 639px) {
     .header {
         min-width: 320px;
-        position: fixed;
+        position: sticky;
+        top: 0;
         display: grid;
         grid-template-columns: 1fr 3fr 1fr;
         grid-template-rows: 100%;
