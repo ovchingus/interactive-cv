@@ -2,26 +2,14 @@ import React from 'react'
 import './style.css'
 
 import { useTranslation } from 'react-i18next'
+import { Header } from '../../components/Header'
 
 function DumbPage ({ changeLanguage }) {
   const { t } = useTranslation()
 
   return (
     <div className='all-block'>
-      <header className='header'>
-        <div className='header-logo'>
-          <a href='#' className='header-logo-text'>Logo</a>
-        </div>
-        <div className='header-links'>
-          <a href='#'>Link#1</a>
-          <a href='#'>Link#2</a>
-          <a href='#'>Link#3</a>
-        </div>
-        <div className='header-profile'>
-          <a href='#'>Profile</a>
-        </div>
-      </header>
-
+      <Header />
       <div className='main-content'>
 
         <main className='main'>
