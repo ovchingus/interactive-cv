@@ -6,14 +6,14 @@ import { DumbPage } from './components/DumbPage'
 
 // page uses the hook
 function Page () {
-  const { i18n } = useTranslation()
+  const { i18n, t } = useTranslation()
 
   const changeLanguage = lng => {
     i18n.changeLanguage(lng)
   }
 
   return (
-    <DumbPage changeLanguage={changeLanguage} />
+    <DumbPage changeLanguage={changeLanguage} translate={t} />
   )
 }
 

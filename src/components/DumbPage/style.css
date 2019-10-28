@@ -1,0 +1,10 @@
+.all-block {
+    width: 100%;
+    background-image: var(--main-background-image);
+    background: var(--main-background-color);
+    min-width: 320px;
+    color: var(--main-text-color);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
