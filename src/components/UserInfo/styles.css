@@ -1,0 +1,45 @@
+.content-block {
+    border-radius: 10px;
+    background-color: var(--main-background-elements-color);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.content-block:hover {
+    transform: scale(1.01);
+    background-color: var(--main-hover-color);
+}
+.profile-block {
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 'profile-img profile-info';
+    grid-area: profile-block;
+}
+.profile-img {
+    grid-area: profile-img;
+    align-self: center;
+    justify-self: start;
+    margin-left: 30px;
+}
+.profile-img > div {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-img > div > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.profile-info {
+    grid-area: profile-info;
+    align-self: center;
+    justify-self: start;
+    font-size: 16pt;
+}
