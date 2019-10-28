@@ -10,7 +10,7 @@ function UserInfo () {
         </div>
       </div>
       <div className='profile-info'>
-        <span>asdasd</span>
+        <span>Vladimir the programmer</span>
       </div>
     </div>
   )

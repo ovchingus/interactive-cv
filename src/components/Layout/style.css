@@ -1,4 +1,8 @@
-.main {
+.background {
+    background-color: var(--main-background-color);
+}
+
+.background .main {
     height: 800px;
     margin: 0 auto;
     padding: 60px 0;

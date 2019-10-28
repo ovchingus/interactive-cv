@@ -4,9 +4,11 @@ import './style.css'
 
 function Layout ({ children }) {
   return (
-    <main className='main'>
-      {children}
-    </main>
+    <div className='background'>
+      <div className='main'>
+        {children}
+      </div>
+    </div>
   )
 }
 
