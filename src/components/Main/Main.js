@@ -2,11 +2,15 @@ import React from 'react'
 import './style.css'
 
 import { UserInfo } from '../../components/UserInfo'
+import { ContentBlock } from '../ContentBlock'
 
 function Main () {
   return (
     <main className='main'>
-      <UserInfo />
+      <ContentBlock className='info'>
+        <UserInfo />
+      </ContentBlock>
+      
       <div className='something-block content-block'>
         <button>ru</button>
         <button>en</button>

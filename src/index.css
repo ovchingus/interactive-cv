@@ -16,13 +16,18 @@ code {
 :root {
   --min-width: 320px;
   --max-width: 1024px;
-  
-  --main-color: rgb(228, 228, 228);
-  --main-text-color: white;
+
+  --yellow: #ffdd2d;
+  --blue: #3e4757;
+  --white: white;
+
+
+  --main-color: var(--yellow);
+  --main-text-color: var(--white);
 
   --main-background-image: none;
-  --main-background-color: linear-gradient(20deg, rgb(82, 82, 82), rgb(255, 255, 255)) no-repeat;
-  --main-background-elements-color: rgba(58, 58, 58, 0.9); 
+  --main-background-color: var(--white);
+  --main-background-elements-color: var(--blue); 
 
   --main-hover-color: coral;
   --main-hover-text-color: coral;

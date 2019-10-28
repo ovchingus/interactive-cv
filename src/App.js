@@ -2,18 +2,18 @@ import React, { Suspense } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import logo from './assets/logo.svg'
-import { DumbPage } from './components/DumbPage'
+import { Page } from './modules/Page'
 
 // page uses the hook
-function Page () {
-  const { i18n } = useTranslation()
+function Default () {
+  const { i18n, t } = useTranslation()
 
   const changeLanguage = lng => {
     i18n.changeLanguage(lng)
   }
 
   return (
-    <DumbPage changeLanguage={changeLanguage} />
+    <Page changeLanguage={changeLanguage} translate={t} />
   )
 }
 
@@ -30,7 +30,7 @@ const Loader = () => (
 export default function App () {
   return (
     <Suspense fallback={<Loader />}>
-      <Page />
+      <Default />
     </Suspense>
   )
 }
