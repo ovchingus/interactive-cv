@@ -31,3 +31,8 @@
     justify-self: center;
     font-size: 24pt;
 }
+
+.text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--main-color);
+}

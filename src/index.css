@@ -21,15 +21,17 @@ code {
   --blue: #3e4757;
   --white: white;
 
+  --button-hover: var(--yellow);
 
-  --main-color: var(--yellow);
+
+  --main-color: var(--white);
   --main-text-color: var(--white);
 
   --main-background-image: none;
   --main-background-color: var(--white);
   --main-background-elements-color: var(--blue); 
 
-  --main-hover-color: coral;
-  --main-hover-text-color: coral;
+  --main-hover-color: var(--blue);
+  --main-hover-text-color: var(--blue);
   --main-border-color: rgb(29, 29, 29); /*rgb(255, 138, 138)*/
 }
