@@ -1,0 +1,12 @@
+{
+  "name": "Name",
+  "about": "About me",
+  "date": "Date",
+  "date_from": "Date from",
+  "email": "Email",
+  "study": "Study",
+  "experience": "Experience",
+  "profile": {
+    "text": "The web site of Max, Vladimir and Max."
+  }
+}
