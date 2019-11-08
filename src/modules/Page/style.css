@@ -27,3 +27,9 @@
 .translation .button:hover {
     background-color: var(--button-hover);
 }
+
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
