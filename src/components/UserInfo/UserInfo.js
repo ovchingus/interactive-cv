@@ -11,7 +11,7 @@ function UserInfo () {
       </div>
       <div className='profile-info'>
         <div className='text'>
-          Vladimir the programmer
+          Maksim the programmer
         </div>
       </div>
     </div>
