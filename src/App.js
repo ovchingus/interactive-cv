@@ -13,7 +13,7 @@ function Default () {
   }
 
   return (
-    <Page changeLanguage={changeLanguage} translate={t} />
+    <Page changeLanguage={changeLanguage} t={t} />
   )
 }
 

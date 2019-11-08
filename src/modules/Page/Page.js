@@ -3,26 +3,30 @@ import React from 'react'
 import './style.css'
 import { Layout, ContentBlock, UserInfo, Button } from '../../components'
 
-function Page () {
+function Page ({ changeLanguage, t }) {
   return (
     <Layout>
+      <div className='translation'>
+        <Button className='button' onClick={() => changeLanguage('ru')}>ru</Button>
+        <Button className='button' onClick={() => changeLanguage('en')}>en</Button>
+      </div>
       <div className='grid'>
         <ContentBlock>
           <UserInfo />
         </ContentBlock>
         <ContentBlock>
-          <div className='anchors btn'>
+          <div className='anchors'>
             <Button onClick={() => alert('pressed')}>
-              Styduing
+              {t('study')}
             </Button>
             <Button onClick={() => alert('pressed')}>
-              Experience
+              {t('experience')}
             </Button>
             <Button onClick={() => alert('pressed')}>
-              About
+              {t('about')}
             </Button>
             <Button onClick={() => alert('pressed')}>
-              Else
+              {t('email')}
             </Button>
           </div>
         </ContentBlock>

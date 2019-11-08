@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
+    margin-top: 30px;
 }
 
 .anchors {
@@ -12,3 +13,17 @@
 
 }
 
+.translation {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.translation .button {
+    background-color: transparent;
+    outline: none;
+}
+
+.translation .button:hover {
+    background-color: var(--button-hover);
+}
