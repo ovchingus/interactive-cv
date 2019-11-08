@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 
-function UserInfo () {
+function UserInfo ({ about }) {
   return (
     <div className='profile-block'>
       <div className='profile-img'>
@@ -11,7 +11,7 @@ function UserInfo () {
       </div>
       <div className='profile-info'>
         <div className='text'>
-          Vladimir the programmer
+          {about}
         </div>
       </div>
     </div>
